@@ -1,0 +1,21 @@
+html {
+  scrollbar-color: #6C7275;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: .6rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #6C7275;
+}
+
+
+:hover::-webkit-scrollbar-thumb {
+  background: #98aca2;
+}
