@@ -28,7 +28,7 @@ const Checkout = () => {
   const updateCart = useCart((state) => state.updateCart)
   const refresh = useStayUp((state) => state.refresh)
   const { register, handleSubmit, formState: {errors, isSubmitting}, reset} = useForm<FormFields>({resolver: zodResolver(formSchema)})
-
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   async function onFormSubmission(data: FormFields) {
     // The data arguement helps us submit this info elsewhere
     await new Promise((resolve) => setTimeout(resolve, 1000))
