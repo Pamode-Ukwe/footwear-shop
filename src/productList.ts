@@ -1,3 +1,4 @@
+import x from '../src/assets/Black crocs.png'
 
 export interface Product {
     id: string
@@ -10,7 +11,7 @@ export interface Product {
 }
 
 export const productList: Product[] = [
-    {id: 'aa',image: '../src/assets/Black crocs.png', name: 'Jordan Roam', price: 35, brand: 'Nike', quantity: 1, subTotal: 35},
+    {id: 'aa',image: x, name: 'Jordan Roam', price: 35, brand: 'Nike', quantity: 1, subTotal: 35},
     {id: 'ab',image: '../src/assets/red.png', name: 'Air Jordan 5 Retro SE', price: 125, brand: 'Nike', quantity: 1, subTotal: 125},
     {id: 'ac',image: '../src/assets/Frame green and red.png', name: ' Air Jordan 1 Low G', price: 60, brand: 'Nike', quantity: 1, subTotal: 60},
     {id: 'ad',image: '../src/assets/Fresh white.png', name: 'Air Jordan 6 Retro', price: 165, brand: 'Nike', quantity: 1, subTotal: 165},
