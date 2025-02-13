@@ -14,7 +14,7 @@ interface Props {
 
 const MappedItems = ({id, name, image, brand, price, quantity, subTotal, increase, decrease,remove}: Props) => { 
     
-  console.log(subTotal)
+  //console.log(subTotal)
 
   return (
    

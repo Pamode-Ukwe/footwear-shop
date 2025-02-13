@@ -3,6 +3,7 @@ import { useRadio, useStayUp } from '../../store'
 import { useNextPage } from './cartstore'
 import { motion } from 'framer-motion'
 import MappedItems from './MappedItems'
+//import { Key } from 'lucide-react'
 
 const Items = () => {
   const radio = useRadio((state) => state.radio)
@@ -17,7 +18,7 @@ const Items = () => {
     const updatedItem = cart.filter((item) => item.id !== id)
     updateCart(updatedItem)
     localStorage.setItem('cart', JSON.stringify(updatedItem))
-    console.log(updatedItem)
+    //console.log(updatedItem)
   }
   const finalSubTotal = cart.reduce((acc, item) => acc + item.subTotal, 0)
   function radioSum(){
@@ -47,7 +48,7 @@ const Items = () => {
         {/* Items */}
         <div>
         {cart.map((product) => (
-          <MappedItems id={product.id} name={product.name} image={product.image} brand={product.brand} price={product.price} quantity={product.quantity}
+          <MappedItems key={product.id + Math.random()} id={product.id} name={product.name} image={product.image} brand={product.brand} price={product.price} quantity={product.quantity}
           subTotal={product.subTotal} increase={increaseQuantity} decrease={decreaseQuantity} remove={handleRemove}
           />
         ))}
