@@ -61,14 +61,14 @@ const ForSale = () => {
             <div key={product.id} className='p-3 bg-gradient-to-b from-transparent via-orange-200/5 to-transparent'>
               <img onClick={() => addItem(product.id)} src={product.image} alt="Product" className='hover:cursor-pointer transform transition duration-900 hover:scale-105 p-1'/>
               <p className='text-3xl text-pricing-red font-semibold py-2'>${product.price}.00</p>
-              <div className='flex justify-between'>
-                <span>
+              <div className='sm:flex grid grid-cols-5 justify-between'>
+                <span className='col-span-3'>
                   <p className='text-form-border-gray'>{highlightedLetters(product.brand, query)}</p>
-                  <p className='text-sm font-semibold'>{highlightedLetters(product.name, query)}</p>
+                  <p className='text-sm font-semibold p-1'>{highlightedLetters(product.name, query)}</p>
                 </span>
                 <motion.button whileTap={{scale: 0.9, backgroundColor: "#38CB89"}} transition={{bounceDamping: 10, bounceStiffness: 600}} 
                 onClick={() => addItem(product.id)} 
-                className='bg-main-black text-sm rounded-md text-main-grey px-3 hover:shadow-xl hover:shadow-green-200 hover:text-green-100'>
+                className='bg-main-black col-span-2 text-sm rounded-md text-main-grey px-3 hover:shadow-xl hover:shadow-green-200 hover:text-green-100'>
                   Add to cart</motion.button>              
               </div> 
             </div> )}))}

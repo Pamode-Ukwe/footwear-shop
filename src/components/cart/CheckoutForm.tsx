@@ -14,12 +14,12 @@ const CheckoutForm = ({register, errors}: any) => {
             <div className="grid grid-cols-2 gap-6">
               <div className="grid">
                 <p className="text-xs my-1">First Name</p>
-                <input {...register('firstName')} required type="text" placeholder="First name" className="text-sm p-2 border border-form-border-gray rounded-md my-1"/>
+                <input {...register('firstName')} required type="text" placeholder="First name" className="text-sm p-2 border border-form-border-gray rounded-md my-1 md:w-full w-[95%]"/>
                 {errors.firstName && <p className="text-xs text-red-400 ml-[30%]">Invalid format</p>}
               </div>
               <div className="grid">
                 <p className="text-xs my-1">Last Name</p>
-                <input {...register('lastName')} required type="text" placeholder="Last name" className="text-sm p-2 border border-form-border-gray rounded-md my-1"/>
+                <input {...register('lastName')} required type="text" placeholder="Last name" className="text-sm p-2 border border-form-border-gray rounded-md my-1 md:w-full w-[98%]"/>
                 {errors.lastName && <p className="text-xs text-red-400 ml-[30%]">Invalid format</p>}
               </div>  
             </div> 
@@ -43,12 +43,12 @@ const CheckoutForm = ({register, errors}: any) => {
             <div className="grid grid-cols-2 gap-6">
               <div className="grid">
                 <p className="text-xs my-1">State</p>
-                <input {...register('state')} required type="text" placeholder="State" className="text-sm p-2 border border-form-border-gray rounded-md my-1"/>
+                <input {...register('state')} required type="text" placeholder="State" className="text-sm p-2 border border-form-border-gray rounded-md my-1 md:w-full w-[95%]"/>
                   {errors.state && <p className="text-xs text-red-400 ml-[80%]">Invalid format</p>}
               </div>
               <div className="grid">
                 <p className="text-xs my-1">Zip Code</p>
-                <input {...register('zipCode')} required type="text" placeholder="Zip code" className="text-sm p-2 border border-form-border-gray rounded-md my-1"/>
+                <input {...register('zipCode')} required type="text" placeholder="Zip code" className="text-sm p-2 border border-form-border-gray rounded-md my-1 md:w-full w-[95%]"/>
                   {errors.zipCode && <p className="text-xs text-red-400 ml-[80%]">Invalid format</p>}
               </div> 
               <span className="flex gap-3"><input type="checkbox" /> <p className="text-sm">Use a different billing adress</p></span>
@@ -70,7 +70,7 @@ const CheckoutForm = ({register, errors}: any) => {
               </div>
               <div className="grid">
                 <p className="text-xs my-1">CVC</p>
-                <input title="🚫" type='number' placeholder="CVC code" className="text-sm p-2 border border-form-border-gray rounded-md my-1" disabled/>
+                <input title="🚫" type='number' placeholder="CVC code" className="text-sm p-2 border border-form-border-gray rounded-md my-1 md:w-full w-[98%]" disabled/>
               </div> 
               <span className="flex gap-3"><input type="checkbox" disabled/> <p className="text-sm">Use a different credit card</p></span>
             </div>                   

@@ -11,7 +11,7 @@ const OrderSummary = () => {
   const finalTotal = finalSubTotal + radioSum()
 
   return (
-    <div className='md:ml-[40%] border border-form-border-gray rounded-md p-6 md:mx-0 mx-16 bg-hero-bg/10'>
+    <div className='md:ml-[40%] ml-0 border border-form-border-gray rounded-md sm:w-3/5 p-6 md:mx-0 mx-16 bg-hero-bg/10 w-full'>
             <p className="font-semibold text-xl mt-2 mb-4">Order Summary</p>
             {/* Mapped out items from previous page */}
              {cart.map((product) => (

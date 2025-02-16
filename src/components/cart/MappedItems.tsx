@@ -27,8 +27,8 @@ const MappedItems = ({id, name, image, brand, price, quantity, subTotal, increas
               <button onClick={() => remove(id)} className='text-sm text-form-border-gray font-semibold hover:text-red-500/60'>X Remove</button>
           </div>                
         </div>
-        <div className='my-auto border border-main-grey text-center py-1 rounded-md'>
-          <button className="cursor-pointer" onClick={() => decrease(id)}>-</button><span className='mx-3'>{quantity}</span>
+        <div className='my-auto border border-main-grey text-center py-1 rounded-md flex justify-center'>
+          <button className="cursor-pointer" onClick={() => decrease(id)}>-</button><span className='sm:mx-3 mx-1'>{quantity}</span>
           <button className="cursor-pointer" onClick={() => increase(id)}>+</button> 
         </div>
         <div className='my-auto'>{price}</div>

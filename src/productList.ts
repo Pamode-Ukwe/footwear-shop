@@ -33,7 +33,7 @@ export interface Product {
 }
 
 export const productList: Product[] = [
-    {id: 'aa',image: a, name: 'Jordan Roam', price: 35, brand: 'Nike', quantity: 1, subTotal: 35},
+    {id: 'aa',image: a, name: 'Jordan Roam Crocs', price: 35, brand: 'Nike', quantity: 1, subTotal: 35},
     {id: 'ab',image: b, name: 'Air Jordan 5 Retro SE', price: 125, brand: 'Nike', quantity: 1, subTotal: 125},
     {id: 'ac',image: c, name: ' Air Jordan 1 Low G', price: 60, brand: 'Nike', quantity: 1, subTotal: 60},
     {id: 'ad',image: d, name: 'Air Jordan 6 Retro', price: 165, brand: 'Nike', quantity: 1, subTotal: 165},
@@ -49,7 +49,7 @@ export const productList: Product[] = [
     {id: 'an',image: n, name: 'Air Jordan 5 Retro SE', price: 144, brand: 'Nike', quantity: 1, subTotal: 144},
     {id: 'ao',image: o, name: 'Jordan Spizike Low', price: 134, brand: 'Nike', quantity: 1, subTotal: 134},
     {id: 'ap',image: p, name: 'Air Jordan 1 Retro OG', price: 120, brand: 'Nike', quantity: 1, subTotal: 120},
-    {id: 'aq',image: q, name: 'Jordan Roam', price: 35, brand: 'Nike', quantity: 1, subTotal: 35},
+    {id: 'aq',image: q, name: 'Jordan Roam Crocs', price: 35, brand: 'Nike', quantity: 1, subTotal: 35},
     {id: 'ar',image: r, name: 'Air Jordan 5 Retro SE', price: 125, brand: 'Nike', quantity: 1, subTotal: 125},
     {id: 'as',image: s, name: ' Air Jordan 1 Low G', price: 60, brand: 'Nike', quantity: 1, subTotal: 60},
     {id: 'at',image: t, name: 'Air Jordan 6 Retro', price: 165, brand: 'Nike', quantity: 1, subTotal: 165},

@@ -63,7 +63,8 @@ const Items = () => {
       </motion.div>
         {/* Cart Summary */}
       <motion.div  initial='hidden' whileInView='visible' viewport={{once: true, amount: 0.2}} transition={{duration: 0.3, ease:'easeOut'}} 
-              variants={{hidden: {opacity: 0, x:50}, visible: {opacity: 1, x:0}}} className='font-semibold mx-auto md:mx-0 md:ml-[40%] gap-6 border-[1px] border-form-border-gray p-6 rounded-lg w-3/5 max-h-fit bg-hero-bg/10'>
+              variants={{hidden: {opacity: 0, x:50}, visible: {opacity: 1, x:0}}} className='font-semibold mx-auto md:mx-0 w-full
+              md:ml-[40%] gap-6 border-[1px] border-form-border-gray p-6 rounded-lg md:w-3/5 max-h-fit bg-hero-bg/10'>
         <p className='text-lg'>Cart summary:</p>
         <label htmlFor='Free' className='flex border-[1px] my-6 border-form-border-gray p-3 rounded-md justify-between hover:cursor-pointer'>
           <span><input type="radio" name='shipping' onChange={e => setRadio(e.target.value)} value='Free' checked={radio === 'Free'} id='Free' className='mr-6'/>Free shipping</span> 

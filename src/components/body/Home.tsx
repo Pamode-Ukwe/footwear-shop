@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <section id='home' className='bg-hero-bg font-inconsolata'>        
         <img src={pattern} className="w-screen opacity-5 absolute" />
-        { sideBar && <ul className='md:hidden absolute z-50 right-4 p-2 bg-discount-offer text-white w-[20%] rounded-sm'>
+        { sideBar && <ul className='md:hidden fixed z-50 right-4 p-2 bg-discount-offer text-white w-[20%] rounded-sm'>
             <Link to={`/`}><li className={sideBarStyle}><button onClick={() => autoScroll('home')}>Home</button></li></Link>
           <li className={sideBarStyle}><button onClick={() => autoScroll('exclusive-deals')}>Shop</button></li>
           <li className={sideBarStyle}><button onClick={() => autoScroll('latest-products')}>Products</button></li>

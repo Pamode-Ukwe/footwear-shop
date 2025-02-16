@@ -11,10 +11,10 @@ const Footer = () => {
     <section id='footer' className="bg-main-black text-main-grey">
         <div className="p-12">
             <div>
-              <div className="flex justify-between items-center">
+              <div className="flex sm:justify-between sm:gap-0 gap-4 items-center">
                 <p className="flex text-xs font-extralight items-center"><a href='/' className="text-2xl font-bold">SOLESPHERE
-                  </a>&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-xl">|</span>&nbsp;&nbsp;&nbsp;&nbsp;Shoe Store</p>
-                <ul className="flex gap-6 text-xs">
+                  </a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Shoe Store</p>
+                <ul className="sm:flex grid grid-cols-2 sm:gap-6 text-xs">
                   <Link to={`/`}><li className={hoverStyle}><button onClick={() => autoScroll('home')}>Home</button></li></Link>
                   <li className={hoverStyle}><button onClick={() => autoScroll('exclusive-deals')}>Shop</button></li>
                   <li className={hoverStyle}><button onClick={() => autoScroll('latest-products')}>Products</button></li>
