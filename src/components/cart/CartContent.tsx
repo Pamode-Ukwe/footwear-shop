@@ -41,7 +41,7 @@ const CartContent = () => {
         <div>
           <p className={`${page === 'thirdPage' ? "font-semibold text-sucess-green flex sm:text-md text-sm items-center" : "font-semibold text-main-grey flex sm:text-md text-sm items-center"}`}>
             <span className={`${page === 'thirdPage' ? "bg-sucess-green text-white py-2 px-4 rounded-full mr-2" : "bg-main-grey text-white py-2 px-4 rounded-full mr-2"}`}>3</span>  
-            <span className="flex gap-2"><span className="hidden md:flex">Order </span> Complete</span></p>
+            <span><span className="hidden md:flex">Order Complete</span></span></p>
         </div>
       </div>
       {page === 'firstPage' && <Items/>}

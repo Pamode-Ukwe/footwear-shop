@@ -31,17 +31,17 @@ const Items = () => {
   }
     
   return (
-    <section className="px-12 py-8 grid md:grid-cols-2 gap-10 bg-hero-bg/5">
+    <section className="px-8 py-8 grid md:grid-cols-2 gap-10 bg-hero-bg/5">
       {/* Products */}
       <motion.div  initial='hidden' whileInView='visible' viewport={{once: true, amount: 0.2}} transition={{duration: 0.3, ease:'easeInOut'}} 
               variants={{hidden: {opacity: 0, x:-50}, visible: {opacity: 1, x:0}}}>
         {/* Titles */}
         <div>
-          <div className="grid grid-cols-6 md:gap-0 gap-6">
+          <div className="grid grid-cols-6 md:gap-0 gap-6 sm:text-md text-sm">
             <p className="col-span-3 font-semibold">Product</p>
             <p className="font-semibold">Quantity</p>
-            <p className="font-semibold">Price <span className='text-sm'>($)</span></p>
-            <p className="font-semibold">Subtotal <span className='text-sm'>($)</span></p>
+            <p className="font-semibold px-1">Price <span className='text-xs'>($)</span></p>
+            <p className="font-semibold">Subtotal <span className='text-xs'>($)</span></p>
           </div>
           <div className="border-b-[1px] border-black mt-4 mb-12"></div>
         </div>

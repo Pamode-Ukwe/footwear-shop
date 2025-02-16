@@ -6,10 +6,10 @@ import { useMovement } from '../store'
 
 const Footer = () => {
   const autoScroll = useMovement((state) => state.autoScroll)
-  const hoverStyle = 'hover:text-discount-offer hover:font-semibold'
+  const hoverStyle = 'hover:text-discount-offer hover:font-semibold py-1'
   return (
     <section id='footer' className="bg-main-black text-main-grey">
-        <div className="p-12">
+        <div className="sm:p-12 py-12 px-4">
             <div>
               <div className="flex sm:justify-between sm:gap-0 gap-4 items-center">
                 <p className="flex text-xs font-extralight items-center"><a href='/' className="text-2xl font-bold">SOLESPHERE
@@ -23,7 +23,7 @@ const Footer = () => {
               </div>
             </div>
             <p className='w-full border-b-[0.1rem] mt-10 border-main-grey'></p>
-            <div className="flex justify-between items-center py-6">
+            <div className="sm:flex grid justify-between items-center py-6">
               <p className="text-sm font-semibold"><span className="text-sm font-thin">Copyright © 2023 SOLESPHERE. All rights reserved&nbsp;&nbsp;&nbsp;&nbsp;
                 </span>Privacy Policy&nbsp;&nbsp;&nbsp;&nbsp; Terms of Use</p>
               <ul className="flex gap-6 items-center">

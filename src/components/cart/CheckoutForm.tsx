@@ -66,11 +66,11 @@ const CheckoutForm = ({register, errors}: any) => {
             <div className="grid grid-cols-2 gap-6">
               <div className="grid">
                 <p className="text-xs my-1">Expiration Date</p>
-                <input title="🚫" type='month' placeholder="MM/YY" className="text-sm p-2 border border-form-border-gray rounded-md my-1" disabled/>
+                <input title="🚫" type='month' placeholder="MM/YY" className="text-sm p-2 border border-form-border-gray rounded-md my-1 md:w-full w-1/2" disabled/>
               </div>
               <div className="grid">
                 <p className="text-xs my-1">CVC</p>
-                <input title="🚫" type='number' placeholder="CVC code" className="text-sm p-2 border border-form-border-gray rounded-md my-1 md:w-full w-[98%]" disabled/>
+                <input title="🚫" type='number' placeholder="CVC code" className="text-sm p-2 border border-form-border-gray rounded-md my-1 md:w-full w-1/2" disabled/>
               </div> 
               <span className="flex gap-3"><input type="checkbox" disabled/> <p className="text-sm">Use a different credit card</p></span>
             </div>                   

@@ -5,7 +5,7 @@ import pattern from '../body/bodyAssets/hero_bg_pattern.png'
 import { Link } from 'react-router-dom'
 // Amount sets how far you scroll before seeing the effects
 const Home = () => {
-  const sideBarStyle = 'hover:text-hero-bg hover:font-semibold mb-8'
+  const sideBarStyle = 'hover:text-hero-bg hover:font-semibold mb-8 px-2'
   const sideBar = useGeneralStore((state) => state.sideBar)
   const autoScroll = useMovement((state) => state.autoScroll)
   return (
